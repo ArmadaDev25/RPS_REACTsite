@@ -2,17 +2,22 @@ import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav'
 import SiteName from './components/SiteName'
+
+// Page Imports
+import Homepage from './pages/Homepage';
+// Route Import 
+import {Route, Routes} from "react-router-dom"
+
 function App() {
   return (
     <div>
-    <div className='flex'>
-    <SiteName />
-    <Nav />
+      <Routes>
+        <Route path="/" element={<Homepage />}/>
+      </Routes>
+    
     </div>
-    <h1 className="text-3xl font-bold">
-      Hello world!
-    </h1>
-    </div>
+    
+    
 
   );
 }

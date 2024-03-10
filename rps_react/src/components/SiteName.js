@@ -1,9 +1,7 @@
-
-
 const SiteName = () => {
     return(
         <div>
-            <h1>Rock, Paper, Scissors, React</h1>
+            <h1>RPS REACT</h1>
         </div>
     )
 
