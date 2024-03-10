@@ -8,8 +8,9 @@ const Homepage = () => {
         <Nav />
         </div>
         <h1 className="text-3xl font-bold">
-        Hello world!
+        Rock, Paper, Scissors, REACT
         </h1>
+        <h2>The online Rock Paper Scissors game made in React</h2>
         </div>
     
     )
