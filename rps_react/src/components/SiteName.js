@@ -2,7 +2,6 @@
 const SiteName = () => {
     return(
         <div>
-            
             <h1 className='w-full text-3xl font-bold text-[#00df9a]'>RPS REACT</h1>
         </div>
     )
