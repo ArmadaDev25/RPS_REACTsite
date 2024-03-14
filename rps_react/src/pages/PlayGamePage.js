@@ -1,7 +1,8 @@
-// Page Where the player can choose between playing against the AI or against another player NOTE: Player VS Player is a stretch goal
+// Page Where the player plays the actual game
 import SiteName from '../components/SiteName'
 import Nav from '../components/Nav'
-const PlayGamePage = () => {
+const PlayGamePage = ( props ) => {
+    console.log(props.gamemode)
     return (
         <div>
         <div className='flex justify-between items-center'>
