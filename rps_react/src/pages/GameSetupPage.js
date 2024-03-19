@@ -7,6 +7,8 @@ const GameSetupPage = () => {
         <SiteName />
         <Nav />
         </div>
+        <h1>Choose a Game Mode To Play</h1>
+        <button>Vs AI</button>
         </div>
 
     )
