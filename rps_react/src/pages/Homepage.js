@@ -3,10 +3,7 @@ import Nav from '../components/Nav'
 const Homepage = () => {
     return(
         <div>
-        <div className='flex justify-between items-center'>
-        <SiteName />
         <Nav />
-        </div>
         <h1 className="text-3xl font-bold">
         Rock, Paper, Scissors, REACT
         </h1>
