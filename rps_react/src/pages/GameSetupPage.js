@@ -8,8 +8,8 @@ const GameSetupPage = () => {
         <Nav />
         </div>
         <h1>Choose a Game Mode To Play</h1>
-        <div>
-        <button>Vs AI</button>
+        <div className='flex'>
+        <button className='bg-[#00df9a]'>Vs AI</button>
         <button>Comming Soon</button>
         </div>
         
