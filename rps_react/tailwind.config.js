@@ -10,5 +10,7 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate"), // plugin for animating buttons
+  ],
 }
