@@ -12,7 +12,7 @@ import {Route, Routes} from "react-router-dom"
 
 function App() {
   return (
-    <div>
+    <div classname='bg-current'>
       <Routes>
         <Route path="/" element={<Homepage />}/>
         <Route path="/playgame" element={<GameSetupPage />}/>

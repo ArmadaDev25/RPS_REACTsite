@@ -2,7 +2,7 @@
 import Nav from '../components/Nav'
 const Homepage = () => {
     return(
-        <div>
+        <div className='h-screen bg-background'>
         <div className='flex justify-center'>
             <Nav />
         </div>

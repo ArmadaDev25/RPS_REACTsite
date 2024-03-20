@@ -4,7 +4,7 @@ import Nav from '../components/Nav'
 const PlayGamePage = ( props ) => {
     console.log(props.gamemode)
     return (
-        <div>
+        <div className='h-screen bg-background'>
         <div className='flex justify-between items-center'>
         <SiteName />
         <Nav />
