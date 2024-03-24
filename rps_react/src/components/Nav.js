@@ -3,11 +3,14 @@ const Nav = () => {
     return(
         <div>
             <ul className='flex'>
-                <li className='p-3'>Home</li>
+                <li className='p-3'>
+                    <Link to="/">Home</Link>
+                </li>
                 <li className='p-3'>
                     <Link to="/playgame">Play</Link>
                 </li>
-                <li className='p-3'><Link to="/rules">Rules</Link>
+                <li className='p-3'>
+                    <Link to="/rules">Rules</Link>
                 </li>
             </ul>
         </div>

@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react"
 import SiteName from '../components/SiteName'
 import Nav from '../components/Nav'
+import { Link } from "react-router-dom"
 const GameSetupPage = () => {
     
     const [isLoading, setIsLoading] = useState(true);
@@ -28,9 +29,11 @@ const GameSetupPage = () => {
         <section className='flex flex-col'>
             <h1>Choose a Game Mode To Play</h1>
             <div className='flex px-10 animate-in fade-in duration-1000'>
+                <Link to="/playvscpu">
                 <button className='bg-[#00df9a] px-10 py-5 '>
                     <h1 className='text-white'>Vs AI</h1>
-                </button> 
+                </button>
+                </Link> 
                 <button>Comming Soon</button>
             </div>
         </section>
