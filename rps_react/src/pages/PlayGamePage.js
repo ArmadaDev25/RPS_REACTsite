@@ -12,9 +12,9 @@ const PlayGamePage = ( props ) => {
         
         return (
             <div>
-                <button>Rock</button>
-                <button>Paper</button>
-                <button>Scissors</button>
+                <button className='bg-[#00df9a] px-10 py-5 '>Rock</button>
+                <button className='bg-[#00df9a] px-10 py-5 '>Paper</button>
+                <button className='bg-[#00df9a] px-10 py-5 '>Scissors</button>
 
             </div>
         )
