@@ -1,4 +1,5 @@
-const PlayVScpu = () => {
+const PlayVScpu = ( props) => {
+    console.log(props.playerchoice)
 
     return(
         <div>
