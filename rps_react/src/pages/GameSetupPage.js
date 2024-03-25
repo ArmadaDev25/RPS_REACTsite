@@ -30,7 +30,7 @@ const GameSetupPage = () => {
             <h1>Choose a Game Mode To Play</h1>
             <div className='flex px-10 animate-in fade-in duration-1000'>
                 <Link to="/playvscpu">
-                <button className='bg-[#00df9a] px-10 py-5 '>
+                <button className='bg-Green hover:bg-Green-dark px-10 py-5 '>
                     <h1 className='text-white'>Vs AI</h1>
                 </button>
                 </Link> 
