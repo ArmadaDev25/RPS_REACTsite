@@ -21,20 +21,35 @@ const PlayGamePage = ( props ) => {
    function setUserChoiceScissors() {
         setChoice('Scissors')
    }
+   function setUserChoiceNull(){
+        setChoice(null)
+   }
 
    console.log(currentChoice)
     // Local JSX element that holds the game buttons
     const Gamebuttons = () => {
-        
-        return (
-            <div>
-                <button onClick={setUserChoiceRock} className='bg-[#00df9a] px-10 py-5 '>Rock</button>
-                <button onClick= {setUserChoicePaper} className='bg-[#00df9a] px-10 py-5 '>Paper</button>
-                <button onClick= {setUserChoiceScissors} className='bg-[#00df9a] px-10 py-5 '>Scissors</button>
+        // if the user has not chosen between the 3 options, the buttons allawing them to make a choice will appear
+        if (currentChoice == null) {   
+            return (
+                <div>
+                    <button onClick={setUserChoiceRock} className='bg-[#00df9a] px-10 py-5 ' >Rock</button>
+                    <button onClick= {setUserChoicePaper} className='bg-[#00df9a] px-10 py-5 '>Paper</button>
+                    <button onClick= {setUserChoiceScissors} className='bg-[#00df9a] px-10 py-5 '>Scissors</button>
+    
+                </div>
+            ) 
 
-            </div>
-        )
+        }
+        // If the user has already made their choice, and the victor has been decided, then they will have the option to play again
+        // Hitting the Play Again? button will reset to users choice to null, restarting the game loop
+        if (currentChoice != null){
+            return (
+                <div>
+                    <button onClick={setUserChoiceNull}className='bg-[#00df9a] px-10 py-5 '>Play Again?</button>
+                </div>
+            )
 
+        }
     }
     
     if (props.gamemode == 1) {
