@@ -32,9 +32,9 @@ const PlayGamePage = ( props ) => {
         if (currentChoice == null) {   
             return (
                 <div>
-                    <button onClick={setUserChoiceRock} className='bg-[#00df9a] px-10 py-5 ' >Rock</button>
-                    <button onClick= {setUserChoicePaper} className='bg-[#00df9a] px-10 py-5 '>Paper</button>
-                    <button onClick= {setUserChoiceScissors} className='bg-[#00df9a] px-10 py-5 '>Scissors</button>
+                    <button onClick={setUserChoiceRock} class='bg-Green hover:bg-Green-dark px-10 py-5  ' >Rock</button>
+                    <button onClick= {setUserChoicePaper} className='bg-Green hover:bg-Green-dark px-10 py-5 '>Paper</button>
+                    <button onClick= {setUserChoiceScissors} className='bg-Green hover:bg-Green-dark px-10 py-5 '>Scissors</button>
     
                 </div>
             ) 
@@ -45,7 +45,7 @@ const PlayGamePage = ( props ) => {
         if (currentChoice != null){
             return (
                 <div>
-                    <button onClick={setUserChoiceNull}className='bg-[#00df9a] px-10 py-5 '>Play Again?</button>
+                    <button onClick={setUserChoiceNull}className='bg-Green hover:bg-Green-dark px-10 py-5 '>Play Again?</button>
                 </div>
             )
 
