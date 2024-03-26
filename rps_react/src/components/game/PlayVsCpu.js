@@ -8,11 +8,7 @@ const PlayVScpu = (props) => {
         console.log("This has run")
         setCpuChoice(choices[Math.floor(Math.random()* 3)])
     }
-
     
-
-  
-
     //Component that contains the logic for making a choice 
     const CpuLogicComp = () => {
         useEffect(() => {
