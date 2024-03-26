@@ -2,25 +2,42 @@ import { useState, useEffect } from "react"
 
 const PlayVScpu = (props) => {
     const choices = ['rock', 'paper', 'scissors']
-    const [cpuChoice, setCpuChoice] = useState()
-    
+    const [cpuChoice, setCpuChoice] = useState(null)
+    const [refresh, setRefresh] = useState(false)
 
-    function getNumChoice(max) {
+    function getNumChoice() {
         
-        let num = Math.floor(Math.random()* max)
-        console.log(num)
-        let choice = choices[num]
-        setCpuChoice(choice)
+        
 
 
     }
+    function makeCPUchoice(){
+        console.log("this has run")
+        setCpuChoice(choices[Math.floor(Math.random()* 3)])
+    }
+
+    function resetcpuchoice(){
+        setCpuChoice(null)
+    }
 
     useEffect(() =>{
-        getNumChoice(3)
-    },[])
-
+        
+        if(cpuChoice == null){
+            makeCPUchoice()
+        }
+        if(refresh == false){
+            makeCPUchoice()
+            console.log(refresh)
+            console.log("This is what the CPU Choose")
+            console.log(cpuChoice)
+        }
+        
+    },[refresh])
     
    if (props.playerchoice != null){
+        if (refresh == false){
+            setRefresh()
+        }
         
         return(
             <div>
@@ -29,6 +46,7 @@ const PlayVScpu = (props) => {
         )    
    }
    if (props.playerchoice == null ){
+        
         return(
             <div>
                 <h1>Play Vs Computer</h1>
