@@ -11,7 +11,7 @@ const GameSetupPage = () => {
         setTimeout(() => {
           setIsLoading(false);
         }, 200);
-      }, []);
+    }, []);
     
     
     if (isLoading){
