@@ -29,7 +29,10 @@ const HomepageButtons = () => {
                         <h1 className='text-white'>Play Now</h1>
                 </button>
             </Link>
-            <Link>
+            <Link to="/about">
+                <button className='bg-Green hover:bg-Green-dark px-10 py-5 '>
+                        <h1 className='text-white'>Learn More</h1>
+                </button>
             </Link>
 
 
