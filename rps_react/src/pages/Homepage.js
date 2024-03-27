@@ -34,11 +34,8 @@ const HomepageButtons = () => {
                         <h1 className='text-white'>Learn More</h1>
                 </button>
             </Link>
-
-
         </div>
     )
-
 }
 
 export default Homepage
