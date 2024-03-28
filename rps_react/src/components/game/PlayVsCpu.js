@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import PlayerScore from "./PlayerScore"
 
 const PlayVScpu = (props) => {
     const choices = ['Rock', 'Paper', 'Scissors']
@@ -26,9 +27,14 @@ const PlayVScpu = (props) => {
         console.log(props)
         return(
             <div>
-                <h1>Play Vs Computer</h1>
-                <CpuLogicComp />
-                <h1>The Player Choose: {props.playerchoice}</h1>
+                <h1 className="text-4xl font-bold text-[#00df9a]">Play Vs Computer</h1>
+                <div className='flex justify-center'>
+                    <div>
+                        <CpuLogicComp />
+                        <h1>The Player Choose: {props.playerchoice}</h1>
+                    </div>
+                    <PlayerScore />
+                </div>
 
             </div>
         )    
@@ -36,8 +42,10 @@ const PlayVScpu = (props) => {
    if (props.playerchoice == null ){
         
         return(
-            <div>
-                <h1>Play Vs Computer</h1>
+            <div >
+                <h1 className="text-4xl font-bold text-[#00df9a]">Play Vs Computer</h1>
+                
+                
             </div>
         )
 
