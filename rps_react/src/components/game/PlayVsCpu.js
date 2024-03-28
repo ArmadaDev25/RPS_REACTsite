@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react"
 import PlayerScore from "./PlayerScore"
+import getWinner from "../../functions/getWinner"
+
 
 const PlayVScpu = (props) => {
     const choices = ['Rock', 'Paper', 'Scissors']
@@ -14,6 +16,7 @@ const PlayVScpu = (props) => {
     const CpuLogicComp = () => {
         useEffect(() => {
             makeCPUchoice()
+            
 
         },[])
         return(
