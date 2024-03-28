@@ -16,6 +16,7 @@ const PlayVScpu = (props) => {
     const CpuLogicComp = () => {
         useEffect(() => {
             makeCPUchoice()
+            getWinner(props.playerchoice, cpuChoice)
             
 
         },[])
