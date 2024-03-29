@@ -14,15 +14,20 @@ const PlayVScpu = (props) => {
     
     //Component that contains the logic for making a choice 
     const CpuLogicComp = () => {
+        const [winner, setWinner] = useState(null)
         useEffect(() => {
             makeCPUchoice()
-            getWinner(props.playerchoice, cpuChoice)
+            setWinner(getWinner(props.playerchoice, cpuChoice))
+            
             
 
         },[])
+        console.log(winner)
         return(
             <div>
                 <h1>The CPU Choose: {cpuChoice}</h1>
+                
+
             </div>
         )
     }
