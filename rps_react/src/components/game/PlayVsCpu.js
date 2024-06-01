@@ -42,7 +42,7 @@ const PlayVScpu = (props) => {
                         <CpuLogicComp />
                         <h1>The Player Choose: {props.playerchoice}</h1>
                     </div>
-                    <PlayerScore />
+                    
                 </div>
 
             </div>
